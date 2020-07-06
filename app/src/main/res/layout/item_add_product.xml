@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/rectangle"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user_poto" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/black"
+                    android:text="Tanggal &amp; jam pesan "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text=":"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/value_tglpesanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="-" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/nama_barang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_marginLeft="5dp"
+                android:text="Paket Beras 1KG"
+                android:textColor="#26292e"
+                android:textSize="15dp" />
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="4"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:text="Harga"
+                    />
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/price"
+                    android:text="0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:text="Quantity"
+                    />
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/quatity"
+                    android:text="0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    />
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:text="Ongkir"
+                    />
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/ongkir"
+                    android:text="0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_column="1"
+                    android:layout_row="2"
+                    />
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_column="0"
+                    android:layout_row="3"
+                    android:text="Total Harga"
+                    />
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/totaL_harga"
+                    android:text="0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_column="1"
+                    android:layout_row="3"
+                    />
+
+            </GridLayout>
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/tolak"
+                    android:textColor="@android:color/white"
+                    android:text="Tolak"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:background="@drawable/btn_gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"/>
+                <Button
+                    android:id="@+id/proses"
+                    android:text="Proses"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/btn_gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"/>
+                <Button
+                    android:id="@+id/selesaikan"
+                    android:visibility="gone"
+                    android:text="Selesaikan"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/btn_gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/red"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/circleredfil"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <TextView
+
+                        android:textColor="@color/red"
+                        android:text="Tertunda"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/yellow"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/circleyellowfil"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <TextView
+                        android:textColor="@color/yellow"
+                        android:text="Diproses"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/green"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/circlegreenfil"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <TextView
+                        android:textColor="@color/green"
+                        android:text="Selesai"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

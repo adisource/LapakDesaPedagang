@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/header"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.283"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="18dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/border_btn_gradient"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:hint="Username"
+                android:inputType="text|textAutoComplete"
+                android:padding="15dp"
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_btn_gradient"
+                android:drawableLeft="@drawable/ic_lock_black"
+                android:fontFamily="@font/quicksand_medium"
+                android:hint="Password"
+                android:inputType="textPassword|textAutoComplete"
+                android:padding="15dp"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/round_border">
+
+            <EditText
+                android:id="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAFAFA"
+                android:hint="NAMA"
+                android:padding="15dp"
+                android:inputType="textAutoComplete"
+                android:textSize="13dp" />
+
+        </LinearLayout> -->
+
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_gradient"
+            android:fontFamily="@font/quicksand_bold"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Masuk"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lupa_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Lupa kata sandi"
+                android:textColor="@color/green" />
+        </LinearLayout>
+        <!--     <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginRight="20dp"
+                 android:layout_gravity="center"
+                 android:orientation="horizontal"
+                 android:weightSum="2"
+                 android:layout_height="match_parent">
+                 <TextView
+                     android:layout_weight="1"
+                     android:textColor="@color/dark_dark"
+                     android:fontFamily="@font/quicksand_bold"
+                     android:text="Pengguna baru?"
+                     android:gravity="right"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"/>
+                 <TextView
+                     android:id="@+id/daftar"
+                     android:layout_weight="1"
+                     android:fontFamily="@font/quicksand_bold"
+                     android:gravity="left"
+                     android:textColor="@color/green"
+                     android:layout_width="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:text="Mari Mendaftar"
+                     android:layout_height="match_parent"/>
+
+
+             </LinearLayout>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:gravity="center"
+            android:text="Powered By \nUniversitas Hamzanwadi"
+            android:textColor="@color/darkblue"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
